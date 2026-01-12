@@ -1,0 +1,17 @@
+#root {
+  width: 100%;
+}
+
+/* Remove default vite styles */
+.logo {
+  display: none;
+}
+
+.card {
+  display: none;
+}
+
+.read-the-docs {
+  display: none;
+}
+
