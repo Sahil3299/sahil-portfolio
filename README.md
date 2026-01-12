@@ -132,8 +132,8 @@ sahil-portfolio/
 
 **Hero Section** (`src/components/Hero.jsx`):
 ```javascript
-<h1>Hi, I'm [Your Name]</h1>
-<p className="hero-subtitle">Your Title | Your Specialty | Your Focus</p>
+<h1>Hi, I'm Sahil Shinde</h1>
+<p className="hero-subtitle"> Sahil Shinde| Full Stack Developer| </p>
 ```
 
 **About Section** (`src/components/About.jsx`):
@@ -143,7 +143,7 @@ sahil-portfolio/
 **Skills** (`src/components/Skills.jsx`):
 ```javascript
 const skills = [
-  { name: "Your Skill", icon: "emoji" },
+  { name: "React js", icon: "emoji" },
   // Add more skills...
 ];
 ```
@@ -158,9 +158,9 @@ const skills = [
 ```
 
 **Contact** (`src/components/Contact.jsx`):
-- Update email address
-- Update GitHub profile link
-- Update LinkedIn profile link
+- Email: sahilshinde2402@email.com
+- GitHub: [@Sahil3299](https://github.com/Sahil3299)
+- LinkedIn: [Sahil Shinde](https://www.linkedin.com/in/sahil-shinde-a30948329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 ### Customize Colors
 
@@ -213,13 +213,6 @@ The portfolio uses smooth scrolling for internal navigation:
 - Skills
 - Projects
 - Contact
-
-## 📲 Social Links
-
-Quick access to:
-- GitHub Profile
-- LinkedIn Profile
-- Email Contact
 
 All links open in new tabs except email which opens the default email client.
 
