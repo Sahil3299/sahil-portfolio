@@ -44,12 +44,16 @@ export default function Projects() {
           title="Blood Connect"
           desc="Online blood donation platform using MERN stack."
           tags={["React", "Node.js", "MongoDB", "Express"]}
+          url="https://blood-connect-teal.vercel.app/"
+          img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdeN-BE5kekzky21Qf-Hv8RvWFfJaoz2uoVA&s"
           variants={itemVariants}
         />
         <Project
           title="Driver Drowsiness Detection"
           desc="ML-based fatigue detection system using OpenCV."
           tags={["Python", "OpenCV", "ML", "Computer Vision"]}
+          url="https://github.com/sahil3299/driver-drowsiness-detection"
+          img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIz1931FLaYjfG56VEy9Z8trHoP-sZ5RIU8A&s"
           variants={itemVariants}
         />
       </motion.div>
@@ -57,7 +61,7 @@ export default function Projects() {
   );
 }
 
-function Project({ title, desc, tags, variants }) {
+function Project({ title, desc, tags, variants, url, img }) {
   return (
     <motion.div
       className="project-card"
@@ -65,6 +69,7 @@ function Project({ title, desc, tags, variants }) {
       whileHover={{ y: -6 }}
       transition={{ duration: 0.3 }}
     >
+      {img && <img src={img} alt={`${title} screenshot`} className="project-img" />}
       <div className="project-header">
         <div className="project-badge"></div>
         <h3>{title}</h3>
@@ -78,7 +83,7 @@ function Project({ title, desc, tags, variants }) {
         ))}
       </div>
       
-      <a className="btn btn-project" href="#">View Project →</a>
+      <a className="btn btn-project" href={url} target="_blank" rel="noopener noreferrer">View Project →</a>
     </motion.div>
   );
 }
