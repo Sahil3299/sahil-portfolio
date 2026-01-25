@@ -293,11 +293,11 @@ export default function Hero() {
           variants={itemVariants}
           whileHover={{ scale: 1.05 }}
         >
-          <motion.div
+          {/* <motion.div
             className="image-wrapper"
             variants={floatingVariants}
             animate="animate"
-          >
+          > */}
             <motion.img
               src={profile}
               alt="profile"
@@ -305,7 +305,7 @@ export default function Hero() {
               whileHover={{
                 scale: 1.1,
                 rotate: 5,
-                boxShadow: "0 30px 60px rgba(37, 99, 235, 0.4)"
+                boxShadow: "0 10px 30px rgba(37, 99, 235, 0.4)"
               }}
               transition={{ duration: 0.3 }}
             />
@@ -369,7 +369,7 @@ export default function Hero() {
             💻
           </motion.div> */}
         </motion.div>
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Scroll Indicator */}
       <motion.div
